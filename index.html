@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width-device-width, intial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sakeef Hassan's Portfolio</title>
+  <script src="https://kit.fontawesome.com/7f4cc0708f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Security Analyst</p>
+            <h1>Hi, I'm <span>Sakeef</span> Hassan<br> from Atlanta, Georgia.</h1>
+        </div>
+    </div>
+</div>
+<!------------------------About Section------------------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! My name is Sakeef Hassan and I am a fourth year Computer Science student at the University of Georgia. 
+                   I plan to pursue a career in cybersecurity after I complete my undergraduate degree in May 2024.
+​                   I currently intern for UGA CyberArch which is the university's initiative to help small businesses within Georgia
+                   defend themselves from cyber attacks. In my free time, I like to thrift clothes, produce music, and 
+                   strength train. My favorite pastime is visiting friends at other universities.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>Java, Python, HTML, CSS, Javascript, C, C++, and R</li>
+                        <li><span>Frameworks</span><br>Flask, Django, React, and Express</li>
+                        <li><span>Technologies</span><br>AWS Cloud, Google Cloud, Linux, Unix, and Tabluea</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>August 2022 - Present</span><br>Security Analyst @ <a href="https://cyberarch.uga.edu/" target="_blank" class="custom-link">CyberArch</a></li>
+                        <li><span>July 2023 - Present</span><br>Treasurer @ Computer Science Computer Initiative Club</li>
+                        <li><span>July 2023</span><br><a href="https://www.linkedin.com/posts/sakeef-hassan_i-had-the-privilege-of-representing-uga-at-activity-7082409599013687297-qMvs?utm_source=share&utm_medium=member_desktop" target="_blank" class="custom-link">Google DC Immersion Experience Program</a></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - Present</span><br>Bachelors of Science in Computer Science<br>University of Georgia<br>Franklin College of Arts and Sciences</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------Services Section-------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, conestur adisokc.
+                tindictu sfdofmd.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-contract"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, conestur adisokc.
+                tindictu sfdofmd.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, conestur adisokc.
+                tindictu sfdofmd.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------portfolio section------------------------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the people around the world.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>Password App</h3>
+                    <p>The app connects you to the people around the world.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h3>E-commerce App</h3>
+                    <p>The app connects you to the people around the world.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!--------------------------contact--------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> sakeefhassan1@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 470-443-5109</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sakeef-hassan/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/sakeefh/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:sakeefhassan1@gmail.com" target="_blank"><i class="fa-solid fa-inbox"></i>
+                </div>
+                <a href="images/cv.pdf" download class="btn btn2" >Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea type="Message" rows=5 placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © Sakeef Hassan</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
