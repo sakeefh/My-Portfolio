@@ -13,18 +13,22 @@
     <div class="container">
         <nav>
             <img src="images/logo.jpg" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+        
         <div class="header-text">
-            <p>Security Analyst</p>
+            <p>Cybersecurity Analyst</p>
             <h1>Hi, I'm <span>Sakeef</span> Hassan<br> from Atlanta, Georgia.</h1>
         </div>
+        
     </div>
 </div>
 <!------------------------About Section------------------------------>
@@ -146,15 +150,16 @@
                     <a href="https://github.com/sakeefh/" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="mailto:sakeefhassan1@gmail.com" target="_blank"><i class="fa-solid fa-inbox"></i>
                 </div>
-                <a href="images/cv.pdf" download class="btn btn2" >Download CV</a>
+                <a href="images/cv.pdf" download class="btn btn2" >View CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea type="Message" rows=5 placeholder="Your Message"></textarea>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea type="Message" name="Message" rows=5 placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -180,6 +185,48 @@
     }
 
 </script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxRaBFFZIraeBWGJt13K77CA9oluerWVX9vDMFbbp2UVJvm_n7BntjwAjxiYESv5PM5/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            msg.style.opacity = 1
+
+
+            setTimeout(() => {
+                msg.style.opacity = 0
+                
+            }, 3000)
+
+            setTimeout(function(){
+                msg.innerHTML = ""
+                form.reset()
+            },4000)
+            form.reset()
+    
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </body>
 </html>
