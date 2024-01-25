@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE-edge">
   <meta name="viewport" content="width-device-width, intial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Sakeef Hassan's Portfolio</title>
+  <title>Sakeef Hassan</title>
   <script src="https://kit.fontawesome.com/7f4cc0708f.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,130 +16,90 @@
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <i class="fa-solid fa-x" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         
         <div class="header-text">
-            <p>Cybersecurity Analyst</p>
-            <h1>Hi, I'm <span>Sakeef</span> Hassan<br> from Atlanta, Georgia.</h1>
+            <h2>Hello!</h2>
+            <br>
+            <br>
+            <h2>I'm <strong>Sakeef Hassan<strong>,<span style="font-weight: normal;"> a results-driven<br> computer science graduate focused<br>
+            on building robust systems and <br>creating seamless user experiences. 
         </div>
         
     </div>
 </div>
-<!------------------------About Section------------------------------>
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/user1.jpg">
-            </div>
 
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Hello! My name is Sakeef Hassan and I am a fourth year Computer Science student at the University of Georgia. 
-                   I plan to pursue a career in cybersecurity after I complete my undergraduate degree in May 2024.
-​                   I currently intern for UGA CyberArch which is the university's initiative to help small businesses within Georgia
-                   defend themselves from cyber attacks. In my free time, I like to thrift clothes, produce music, and 
-                   strength train. My favorite pastime is visiting friends at other universities.</p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Languages</span><br>Java, Python, HTML, CSS, Javascript, C, C++, and R</li>
-                        <li><span>Frameworks</span><br>Flask, Django, React, and Express</li>
-                        <li><span>Technologies</span><br>AWS Cloud, Google Cloud, Linux, Unix, and Tabluea</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>August 2022 - Present</span><br>Security Analyst @ <a href="https://cyberarch.uga.edu/" target="_blank" class="custom-link">CyberArch</a></li>
-                        <li><span>July 2023 - Present</span><br>Treasurer @ Computer Science Computer Initiative Club</li>
-                        <li><span>July 2023</span><br><a href="https://www.linkedin.com/posts/sakeef-hassan_i-had-the-privilege-of-representing-uga-at-activity-7082409599013687297-qMvs?utm_source=share&utm_medium=member_desktop" target="_blank" class="custom-link">Google DC Immersion Experience Program</a></li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2020 - Present</span><br>Bachelors of Science in Computer Science<br>University of Georgia<br>Franklin College of Arts and Sciences</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--------------------------Services Section-------------------------->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet, conestur adisokc.
-                tindictu sfdofmd.</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-file-contract"></i>
-                <h2>UI/UX Design</h2>
-                <p>Lorem ipsum dolor sit amet, conestur adisokc.
-                tindictu sfdofmd.</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store-ios"></i>
-                <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet, conestur adisokc.
-                tindictu sfdofmd.</p>
-                <a href="#">Learn More</a>
-            </div>
-        </div>
-    </div>
-</div>
 <!-------------------portfolio section------------------------------------------>
-<div id="portfolio">
+<div id="featured-projects">
     <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work1.png">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connects you to the people around the world.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <h1 class="sub-title">Featured Projects</h1>
+        <ul class="project-list">
+            <li class="project-card">
+                <div class="project-image">
+                    <img src="images/work1.png" alt="Project 1 Image">
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work2.png">
-                <div class="layer">
-                    <h3>Password App</h3>
-                    <p>The app connects you to the people around the world.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <div class="project-content">
+                    <div class="project-info">
+                        <h2>Project 1</h2>
+                        <p>Description of Project 1</p>
+                        <ul class="tech-list">
+                            <li>Technology 1</li>
+                            <li>Technology 2</li>
+                            <li>Technology 3</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work3.png">
-                <div class="layer">
-                    <h3>E-commerce App</h3>
-                    <p>The app connects you to the people around the world.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="path/to/project/github-repo" target="_blank" class="btn btn-github">View Code</a>
+            </li>
+            <li class="project-card">
+                <div class="project-image">
+                    <img src="images/work2.png" alt="Project 2 Image">
                 </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See More</a>
+                <div class="project-content">
+                    <div class="project-info">
+                        <h2>Project 2</h2>
+                        <p>Description of Project 2</p>
+                        <ul class="tech-list">
+                            <li>Technology 1</li>
+                            <li>Technology 2</li>
+                            <li>Technology 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="path/to/project/github-repo" target="_blank" class="btn btn-github">View Code</a>
+            </li>
+            <li class="project-card">
+                <div class="project-image">
+                    <img src="images/work3.png" alt="Project 3 Image">
+                </div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <h2>Project 3</h2>
+                        <p>Description of Project 3</p>
+                        <ul class="tech-list">
+                            <li>Technology 1</li>
+                            <li>Technology 2</li>
+                            <li>Technology 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="path/to/project/github-repo" target="_blank" class="btn btn-github">View Code</a>
+            </li>
+        </ul>
     </div>
 </div>
+
+
+
 <!--------------------------contact--------------------->
 <div id="contact">
-    <div class="container">
+    <div class="container2">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
@@ -150,16 +110,8 @@
                     <a href="https://github.com/sakeefh/" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="mailto:sakeefhassan1@gmail.com" target="_blank"><i class="fa-solid fa-inbox"></i>
                 </div>
-                <a href="images/cv.pdf" download class="btn btn2" >View CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea type="Message" name="Message" rows=5 placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+                <!------------insert pdf link here-->
+                
             </div>
         </div>
     </div>
@@ -169,25 +121,6 @@
 </div>
 
 <script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>
-
-<script>
-
     var sidemenu = document.getElementById("sidemenu");
 
     function openmenu(){
@@ -196,37 +129,23 @@
     function closemenu(){
         sidemenu.style.right = "-200px";
     }
-
 </script>
 
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxRaBFFZIraeBWGJt13K77CA9oluerWVX9vDMFbbp2UVJvm_n7BntjwAjxiYESv5PM5/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            msg.style.opacity = 1
-
-
-            setTimeout(() => {
-                msg.style.opacity = 0
-                
-            }, 3000)
-
-            setTimeout(function(){
-                msg.innerHTML = ""
-                form.reset()
-            },4000)
-            form.reset()
-    
-    })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
+    document.addEventListener("DOMContentLoaded", function () {
+        const scrollLinks = document.querySelectorAll('a[href^="#"]');
+        scrollLinks.forEach(link => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - 2,
+                    behavior: "smooth"
+                });
+            });
+        });
+    });
+</script>
 </body>
 </html>
