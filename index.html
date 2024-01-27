@@ -7,8 +7,11 @@
   <link rel="stylesheet" href="style.css">
   <title>Sakeef Hassan</title>
   <script src="https://kit.fontawesome.com/7f4cc0708f.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inter:wght@100;500&family=Montserrat&family=Noto+Sans+Display&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-------------------Header Section------------------------------------------>
 <div id="header">
     <div class="container">
         <nav>
@@ -16,7 +19,7 @@
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <i class="fa-solid fa-x" onclick="closemenu()"></i>
@@ -25,101 +28,134 @@
         </nav>
         
         <div class="header-text">
-            <h2>Hello!</h2>
+            <h2 class="fade-in">Hello!</h2>
             <br>
-            <br>
-            <h2>I'm <strong>Sakeef Hassan<strong>,<span style="font-weight: normal;"> a results-driven<br> computer science graduate focused<br>
-            on building robust systems and <br>creating seamless user experiences. 
+            <h2 class="fade-in">I'm <strong>Sakeef</strong>,<span style="font-weight: normal;"> a results-driven</span></h2>
+            <h2 class="fade-in">computer science student focused<br>on building robust systems and <br>creating seamless user experiences.</h2>
         </div>
-        
     </div>
 </div>
+<!-------------------Background Section------------------------------------------>
+<div id="about">
+    <div class="background-section">
+        <div class="left-column">
+        <h2>BACKGROUND</h2>
+        </div>
+        <div class="right-column">
+        <p>I'm currently an Cybersecurity Analyst at UGA CyberArch strengthening the online infrastructure of diverse stakeholders. I will graduate from the University of Georgia after completing three awesome six-month co-ops at MullenLowe U.S., Starry, and Apple Music.</p>
+        <p>As a software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</p>
+        <p>When I'm not in front of a computer screen, I'm probably snowboarding, cruising around on my penny board, or crossing off another item on my bucket list.</p>
+        </div>
+    </div>
+</div>
+<!-------------------Skills Section------------------------------------------>
+<div class="skills-section">
+    <div class="skills-header">
+      <h2>SKILLS</h2>
+    </div>
+    <div class="skills-content">
+      <div class="skills-column">
+        <h3>LANGUAGES<span class="underscore">_______</span></h3>
+        <ul>
+          <li><i class="fa-brands fa-python fa-lg" style="color: #306a97;"></i> Python</li>
+          <li><i class="fa-brands fa-java fa-lg"></i> Java</li>
+          <li><img src="images/C++.png" class="Cplus"> C++</li>
+          <li><i class="fa-brands fa-html5 fa-lg" style="color: #fa7000;"></i> HTML</li>
+          <li><i class="fa-brands fa-css3-alt fa-lg" style="color: #0f67ff;"></i> CSS</li>
+          <li><i class="fa-brands fa-js fa-lg" style="color: #FFD43B;"></i> JavaScript</li>
+          <li><i class="fa-solid fa-database" style="color: #74C0FC;"></i> SQL</li>
 
-<!-------------------portfolio section------------------------------------------>
-<div id="featured-projects">
-    <div class="container">
-        <h1 class="sub-title">Featured Projects</h1>
-        <ul class="project-list">
-            <li class="project-card">
-                <div class="project-image">
-                    <img src="images/work1.png" alt="Project 1 Image">
-                </div>
-                <div class="project-content">
-                    <div class="project-info">
-                        <h2>Project 1</h2>
-                        <p>Description of Project 1</p>
-                        <ul class="tech-list">
-                            <li>Technology 1</li>
-                            <li>Technology 2</li>
-                            <li>Technology 3</li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="path/to/project/github-repo" target="_blank" class="btn btn-github">View Code</a>
-            </li>
-            <li class="project-card">
-                <div class="project-image">
-                    <img src="images/work2.png" alt="Project 2 Image">
-                </div>
-                <div class="project-content">
-                    <div class="project-info">
-                        <h2>Project 2</h2>
-                        <p>Description of Project 2</p>
-                        <ul class="tech-list">
-                            <li>Technology 1</li>
-                            <li>Technology 2</li>
-                            <li>Technology 3</li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="path/to/project/github-repo" target="_blank" class="btn btn-github">View Code</a>
-            </li>
-            <li class="project-card">
-                <div class="project-image">
-                    <img src="images/work3.png" alt="Project 3 Image">
-                </div>
-                <div class="project-content">
-                    <div class="project-info">
-                        <h2>Project 3</h2>
-                        <p>Description of Project 3</p>
-                        <ul class="tech-list">
-                            <li>Technology 1</li>
-                            <li>Technology 2</li>
-                            <li>Technology 3</li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="path/to/project/github-repo" target="_blank" class="btn btn-github">View Code</a>
-            </li>
         </ul>
+      </div>
+      <div class="skills-column">
+        <h3>TECHNOLOGIES<span class="underscore">________</span></h3>
+        <ul>
+          <li><i class="fa-solid fa-cloud" style="color: #2d73eb;"></i> Google Cloud</li>
+          <li><i class="fa-brands fa-aws fa-sm" style="color: #132671;"></i> Amazon Web Services</li>
+          <li><i class="fa-brands fa-linux fa-lg" style="color: #000";></i></i>  Linux</li>
+          <li><img src="images/azure.png" class="Cplus"> Azure</li>
+          <li><i class="fa-light fa-u fa-lg" style="color: #036316;"></i><span class="underscore">_</span>Unix</li>
+          <li><i class="fa-solid fa-feather" style="color: #934079;"><span class="underscore">_</span></i>Apache Maven</li>
+        
+        </ul>
+      </div>
+      <div class="skills-column">
+        <h3>TOOLS<span class="underscore">__________</span></h3>
+        <ul>
+          <li>Wireshark</li>
+          <li>Splunk</li>
+          <li>Git & Github</li>
+          <li>Bash</li>
+          <li>Postman</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+      <div class="skills-column">
+        <h3>SECURITY</h3>
+        <ul>
+          <li>NIST</li>
+          <li>HIPAA</li>
+          <li>SIEM</li>
+          <li>Vulnerability Assessments</li>
+          <li>Incident Response</li>
+          <li>Onsite Visits</li>
+        </ul>
+      </div>
     </div>
-</div>
+  </div>
 
-
-
-<!--------------------------contact--------------------->
-<div id="contact">
-    <div class="container2">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i> sakeefhassan1@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> 470-443-5109</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/sakeef-hassan/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/sakeefh/" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="mailto:sakeefhassan1@gmail.com" target="_blank"><i class="fa-solid fa-inbox"></i>
-                </div>
-                <!------------insert pdf link here-->
-                
-            </div>
+<!-------------------Projects Section------------------------------------------>
+<div id="projects">
+<section class="projects-section">
+    <div class="project">
+      <div class="project-content">
+        <div class="project-header">
+          <h2>FEATURED PROJECTS</h2>
         </div>
+        <div class="project-image">
+          <img src="images/work1.png" alt="Project Image">
+        </div>
+        <div class="project-info">
+          <h3>Password Strength Checker</h3>
+          <p>Project description goes here...</p>
+          <a href="#" class="project-link">Learn More</a>
+        </div>
+      </div>
     </div>
-    <div class="copyright">
-        <p> Copyright © Sakeef Hassan</p>
-    </div>
+    <!-- project 2 -->
+    <div class="project">
+        <div class="project-content">
+          <div class="project-header">
+            <h2><span class="underscore">_______________--____</span></h2>
+          </div>
+          <div class="project-image">
+            <img src="images/work1.png" alt="Project Image">
+          </div>
+          <div class="project-info">
+            <h3>Password Strength Checker</h3>
+            <p>Project description goes here...</p>
+            <a href="#" class="project-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+  </section>
 </div>
 
+<!--------------------Footer ------------------------------------------>
+<footer class="site-footer">
+    <div class="footer-content">
+      <p><strong>Designed and Developed by<br>Sakeef Hassan 👨🏼‍🎓 2024</strong></p>
+      <ul class="footer-links">
+        <li><a href ="mailto:sakeefhassan1@gmail.com" target="_blank">EMAIL</a></li>
+        <li><a href="https://github.com/sakeefh" target="_blank">GITHUB</a></li>
+        <li><a href="https://www.linkedin.com/in/sakeef-hassan/" target="_blank">LINKEDIN</a></li>
+        <li><a href="https://Google.com" target="_blank">RESUME</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+<!---------------scripts----------------------------------------------->
 <script>
     var sidemenu = document.getElementById("sidemenu");
 
@@ -147,5 +183,6 @@
         });
     });
 </script>
+
 </body>
 </html>
