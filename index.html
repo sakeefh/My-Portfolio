@@ -17,14 +17,14 @@
         <nav>
             <img src="images/logo.jpg" class="logo">
             <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                <li><a href="#header"><b>Home</b></a></li>
+                <li><a href="#about"><b>About</b></a></li>
+                <li><a href="#projects"><b>Projects</b></a></li>
+                <li><a href="mailto:sakeefhassan1@gmail.com" target="_blank"><b>Contact</b></a></li>
+                <li><a href="https://drive.google.com/file/d/1aqzdsQJ6ErERgtsEUb784ejP3EP-NDOA/view?usp=sharing" target="_blank"><b>Resume</b></a></li>
+                
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            
         </nav>
         
         <div class="header-text">
@@ -42,9 +42,9 @@
         <h2>BACKGROUND</h2>
         </div>
         <div class="right-column">
-        <p>I'm currently an Cybersecurity Analyst at UGA CyberArch strengthening the online infrastructure of diverse stakeholders. I will graduate from the University of Georgia after completing three awesome six-month co-ops at MullenLowe U.S., Starry, and Apple Music.</p>
-        <p>As a software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</p>
-        <p>When I'm not in front of a computer screen, I'm probably snowboarding, cruising around on my penny board, or crossing off another item on my bucket list.</p>
+        <p>I'm currently a Cybersecurity Analyst at <a href="https://cyberarch.uga.edu/" target="_blank" class="text-link"><b>UGA CyberArch</b></a> strengthening the online infrastructure of small businesses across Georgia. I will graduate from the <a href="https://www.uga.edu/" target="_blank" class="text-link"><b>University of Georgia</b></a> in May of 2024 after interning at CyberArch for four semesters.</p>
+        <p>As a Computer Science major, I enjoy bridging the gap between engineering and security — combining my technical knowledge with my keen eye for detail and problem-solving skills to develop robust and secure systems that protect against potential vulnerabilities and threats.</p>
+        <p>When I'm not on the computer, I enjoy thrifting for clothes, strength training, or checking things off my bucket list.</p>
         </div>
     </div>
 </div>
@@ -55,7 +55,7 @@
     </div>
     <div class="skills-content">
       <div class="skills-column">
-        <h3>LANGUAGES<span class="underscore">_______</span></h3>
+        <h3>LANGUAGES<span class="underscore">___</span></h3>
         <ul>
           <li><i class="fa-brands fa-python fa-lg" style="color: #306a97;"></i> Python</li>
           <li><i class="fa-brands fa-java fa-lg"></i> Java</li>
@@ -68,7 +68,7 @@
         </ul>
       </div>
       <div class="skills-column">
-        <h3>TECHNOLOGIES<span class="underscore">________</span></h3>
+        <h3>TECHNOLOGIES<span class="underscore">_______</span></h3>
         <ul>
           <li><i class="fa-solid fa-cloud" style="color: #2d73eb;"></i> Google Cloud</li>
           <li><i class="fa-brands fa-aws fa-sm" style="color: #132671;"></i> Amazon Web Services</li>
@@ -80,7 +80,7 @@
         </ul>
       </div>
       <div class="skills-column">
-        <h3>TOOLS<span class="underscore">__________</span></h3>
+        <h3>TOOLS<span class="underscore">________</span></h3>
         <ul>
           <li>Wireshark</li>
           <li>Splunk</li>
@@ -109,32 +109,39 @@
 <section class="projects-section">
     <div class="project">
       <div class="project-content">
-        <div class="project-header">
+        <div class="project-header project-details">
           <h2>FEATURED PROJECTS</h2>
         </div>
         <div class="project-image">
-          <img src="images/work1.png" alt="Project Image">
+          <img src="images/v1new.jpg" alt="Project Image">
         </div>
-        <div class="project-info">
-          <h3>Password Strength Checker</h3>
-          <p>Project description goes here...</p>
-          <a href="#" class="project-link">Learn More</a>
+        <div class="project-info project-details">
+          <h3>Do Your Part</h3>
+          <p>A React Native mobile app connecting students with volunteer opportunities.<br> 
+            <br>This Hackathon project was built with JavaScript, React Native, Java, C++, and Python.<br>
+            <br>Some key features include volunteer hour tracking and personalized feeds for a volunteer's preferences.<br>
+          </p>
+          <a href="https://github.com/sakeefh/UGA-Hacks-8" class="project-link" target="_blank">GitHub <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #ffffff;"></i></a>
         </div>
       </div>
     </div>
     <!-- project 2 -->
-    <div class="project">
+    <div class="project" id="project2">
         <div class="project-content">
-          <div class="project-header">
+          <div class="project-header project-details">
             <h2><span class="underscore">_______________--____</span></h2>
           </div>
-          <div class="project-image">
-            <img src="images/work1.png" alt="Project Image">
+          <div class="project-image project-details">
+            <img src="images/v22.jpg" alt="Project Image 2">
           </div>
           <div class="project-info">
-            <h3>Password Strength Checker</h3>
-            <p>Project description goes here...</p>
-            <a href="#" class="project-link">Learn More</a>
+            <h3>Secure Password Checker</h3>
+            <p>A python based application allows users to securely assess the strength of their passwords.<br>
+              <br>This project was built with Flask, scikit-learn, NumPy, Hashlib, and JavaScript.<br>
+              <br>It utilizes machine learning, specifically a RandomForestClassifier from scikit-learn, 
+              trained on a dataset of common passwords to enhance its accuracy in identifying weak passwords.
+            </p>
+            <a href="https://github.com/sakeefh/Secure-Password-Checker" class="project-link" target="_blank">GitHub <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #ffffff;"></i></a>
           </div>
         </div>
       </div>
@@ -144,45 +151,16 @@
 <!--------------------Footer ------------------------------------------>
 <footer class="site-footer">
     <div class="footer-content">
-      <p><strong>Designed and Developed by<br>Sakeef Hassan 👨🏼‍🎓 2024</strong></p>
+      <p><strong>Sakeef Hassan &copy; 2024</strong></p>
       <ul class="footer-links">
         <li><a href ="mailto:sakeefhassan1@gmail.com" target="_blank">EMAIL</a></li>
         <li><a href="https://github.com/sakeefh" target="_blank">GITHUB</a></li>
         <li><a href="https://www.linkedin.com/in/sakeef-hassan/" target="_blank">LINKEDIN</a></li>
-        <li><a href="https://Google.com" target="_blank">RESUME</a></li>
+        <li><a href="https://drive.google.com/file/d/1aqzdsQJ6ErERgtsEUb784ejP3EP-NDOA/view?usp=sharing" target="_blank">RESUME</a></li>
       </ul>
     </div>
   </footer>
-
-
 <!---------------scripts----------------------------------------------->
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const scrollLinks = document.querySelectorAll('a[href^="#"]');
-        scrollLinks.forEach(link => {
-            link.addEventListener("click", (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute("href").substring(1);
-                const targetElement = document.getElementById(targetId);
-                window.scrollTo({
-                    top: targetElement.offsetTop - 2,
-                    behavior: "smooth"
-                });
-            });
-        });
-    });
-</script>
-
+<script src="scripts.js"></script>
 </body>
 </html>
